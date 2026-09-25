@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "chatbot-guiado",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["chatbot-guiado/server.py"],
+      "port": 3100,
+      "autoPort": false
+    }
+  ]
+}

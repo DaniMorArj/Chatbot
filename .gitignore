@@ -1,0 +1,24 @@
+# Secretos y configuración local
+.env
+*.env
+.mcp.json
+.claude/settings.local.json
+
+# Datos locales
+/data/
+chatbot-guiado/data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/

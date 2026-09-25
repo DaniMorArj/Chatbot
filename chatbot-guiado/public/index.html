@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soporte IT Tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-title">
+          <span class="dot"></span>
+          <div>
+            <h1>Asistente de Soporte IT</h1>
+            <p id="tienda-info">Ayuda con impresoras, TPV y periféricos de tienda</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div id="lang" class="lang"></div>
+          <button id="btn-soporte" class="btn-soporte" title="Contactar con soporte">
+            📞 Contactar soporte
+          </button>
+        </div>
+      </header>
+
+      <main id="chat" class="chat" aria-live="polite"></main>
+
+      <footer class="composer">
+        <form id="form" class="composer-form">
+          <input
+            id="input"
+            class="input"
+            type="text"
+            placeholder="Escribe la incidencia o elige una opción arriba…"
+            autocomplete="off"
+          />
+          <button id="send" type="submit" class="btn-send" aria-label="Buscar">➤</button>
+        </form>
+        <p class="disclaimer">Si es urgente, usa el botón «Contactar soporte».</p>
+      </footer>
+    </div>
+
+    <!-- Pantalla inicial: identificar la tienda (obligatorio) -->
+    <div id="setup" class="setup">
+      <form id="setup-form" class="setup-card">
+        <h2>Antes de empezar</h2>
+        <p>Identifica tu tienda para poder ayudarte y registrar la consulta.</p>
+        <label>
+          Número de tienda
+          <input id="setup-numero" type="text" inputmode="text" placeholder="Ej. 042" required />
+        </label>
+        <button type="submit" class="setup-btn">Entrar</button>
+        <p id="setup-error" class="setup-error" hidden>Rellena el número de tienda.</p>
+      </form>
+    </div>
+
+    <!-- Lightbox para ampliar imágenes -->
+    <div id="lightbox" class="lightbox" hidden>
+      <img id="lightbox-img" alt="" />
+    </div>
+
+    <script src="i18n.js?v=10"></script>
+    <script src="flows.js?v=10"></script>
+    <script src="app.js?v=10"></script>
+  </body>
+</html>
