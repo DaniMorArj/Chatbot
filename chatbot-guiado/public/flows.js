@@ -1,15 +1,7 @@
 window.FLOWS = {
-  "soporte": {
-    "primario": {
-      "nombre": "Konica Minolta",
-      "telefono": "+34 910 603 532",
-      "correo": "soporte.pampling@konicaminolta.es"
-    },
-    "secundario": {
-      "nombre": "Soporte técnico Pampling",
-      "telefono": "+34 638 454 275",
-      "correo": "soporte.tecnico@pampling.com"
-    }
+  soporte: {
+    primario:   { nombre: "Soporte IT (demo)", telefono: "600 000 000", correo: "soporte@ejemplo.com" },
+    secundario: { nombre: "Soporte IT — Nivel 2 (demo)", telefono: "600 000 001", correo: "soporte2@ejemplo.com" },
   },
   "devices": [
     {
